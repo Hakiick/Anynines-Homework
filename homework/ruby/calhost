@@ -1,0 +1,18 @@
+                                                     Liste des bases de données
+    Nom     | Propriétaire | Encodage | Collationnement | Type caract. | Locale ICU | Fournisseur de locale |     Droits d'accès     
+------------+--------------+----------+-----------------+--------------+------------+-----------------------+------------------------
+ blog_db    | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | =Tc/postgres          +
+            |              |          |                 |              |            |                       | postgres=CTc/postgres +
+            |              |          |                 |              |            |                       | applicant=CTc/postgres
+ max        | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | =CTc/postgres         +
+            |              |          |                 |              |            |                       | postgres=CTc/postgres +
+            |              |          |                 |              |            |                       | max=CTc/postgres
+ mydatabase | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | =Tc/postgres          +
+            |              |          |                 |              |            |                       | postgres=CTc/postgres
+ postgres   | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | 
+ template0  | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | =c/postgres           +
+            |              |          |                 |              |            |                       | postgres=CTc/postgres
+ template1  | postgres     | UTF8     | fr_FR.UTF-8     | fr_FR.UTF-8  |            | libc                  | =c/postgres           +
+            |              |          |                 |              |            |                       | postgres=CTc/postgres
+(6 lignes)
+
