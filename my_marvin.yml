@@ -1,0 +1,46 @@
+unclassified:
+  systemMessage: "Welcome to the Chocolatine-Powered Marvin Jenkins Instance."
+
+jenkins:
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "chocolateen"
+          password: ${USER_CHOCOLATEEN_PASSWORD}
+          fullName: "Hugo"
+        - id: "vaugie_g"
+          password: ${USER_VAUGIE_G_PASSWORD}
+          fullName: "Garance"
+        - id: "i_dont_know"
+          password: ${USER_I_DONT_KNOW_PASSWORD}
+          fullName: "Jeremy"
+        - id: "nasso"
+          password: ${USER_NASSO_PASSWORD}
+          fullName: "Nassim"
+
+  authorizationStrategy:
+    roleBased:
+      roleMap:
+        "admin":
+          "Marvin master": ["*"]
+        "ape":
+          "Pedagogical team member": ["Overall/Read", "Job/Build", "Workspace/Read"]
+        "gorilla":
+          "Group Obsessively Researching Innovation Linked to Learning and Accomplishment": ["Overall/Read", "Job/Build", "Job/Create", "Job/Configure", "Job/Move", "Job/Delete", "Job/Cancel", "Workspace/Read"]
+        "assist":
+          "Assistant": ["Job/Read", "Workspace/Read"]
+
+  # Installation des plugins via JCasC
+  pluginManagement:
+    plugins:
+      - cloudbees-folder:1.7
+      - configuration-as-code:1.66
+      - credentials:2.3.0
+      - github:1.33.1
+      - instance-identity:2.6.0
+      - job-dsl:1.77
+      - script-security:1.77
+      - structs:1.23
+      - role-strategy:3.2.1
+      - ws-cleanup:0.39
